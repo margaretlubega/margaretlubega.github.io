@@ -18,11 +18,12 @@ html{scroll-behavior:smooth;}
 body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 ::selection{background:var(--rose);color:var(--bg);}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 5vw;mix-blend-mode:difference;}
-.logo{font-family:'Fraunces',serif;font-weight:500;font-size:1.15rem;letter-spacing:0.02em;color:#fff;text-decoration:none;}
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 5vw;transition:background 0.3s,padding 0.3s,border-color 0.3s;border-bottom:1px solid transparent;}
+nav.scrolled{background:rgba(26,11,17,0.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:0.9rem;padding-bottom:0.9rem;border-bottom:1px solid var(--line);}
+.logo{font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;letter-spacing:0.12em;color:var(--cream);text-decoration:none;}
 .nav-links{display:flex;gap:2.5rem;list-style:none;align-items:center;}
-.nav-links a{color:#fff;text-decoration:none;font-size:0.78rem;font-weight:400;letter-spacing:0.06em;position:relative;}
-.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:#fff;transition:width 0.3s;}
+.nav-links a{color:var(--cream);text-decoration:none;font-size:0.78rem;font-weight:400;letter-spacing:0.06em;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--rose);transition:width 0.3s;}
 .nav-links a:hover::after{width:100%;}
 
 /* HERO */
@@ -38,7 +39,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;justify-content
 .hero-content{position:relative;z-index:1;}
 .hero-marker{font-size:0.72rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--rose);margin-bottom:2.5rem;display:flex;align-items:center;gap:1rem;}
 .hero-marker::before{content:'';width:3rem;height:1px;background:var(--rose);}
-.hero h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.4rem,6vw,5.5rem);line-height:1.05;letter-spacing:-0.02em;max-width:16ch;margin-bottom:2.5rem;}
+.hero h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2rem,4.4vw,4.2rem);line-height:1.08;letter-spacing:-0.02em;max-width:16ch;margin-bottom:2.5rem;}
 .hero h1 b{font-weight:600;font-style:italic;color:var(--rose);}
 .hero h1 .gold{color:var(--gold);font-weight:500;}
 .hero-meta{display:flex;gap:3rem;flex-wrap:wrap;align-items:flex-end;margin-top:1rem;}
@@ -163,7 +164,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
 <body>
 
 <nav>
-  <a href="#" class="logo">Margaret Namazzi Lubega</a>
+  <a href="#" class="logo">MNL</a>
   <ul class="nav-links">
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
@@ -436,12 +437,13 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
   <div class="contact-links">
     <a href="mailto:margaret@margaretlubega.com" class="clink dark">Email Me</a>
     <a href="https://linkedin.com/in/margaretlubega" target="_blank" rel="noopener" class="clink out">LinkedIn</a>
-    <a href="resume.pdf" class="clink out" download>Download CV</a>
   </div>
 </section>
 <footer>© 2026 Margaret Namazzi Lubega</footer>
 
 <script>
+const navEl=document.querySelector('nav');
+window.addEventListener('scroll',()=>{navEl.classList.toggle('scrolled',window.scrollY>40);});
 function switchView(v){
   document.getElementById('view-exp').classList.toggle('show',v==='exp');
   document.getElementById('view-edu').classList.toggle('show',v==='edu');
