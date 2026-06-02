@@ -74,8 +74,10 @@ section{padding:7rem 5vw;}
 .proj:hover .proj-headline{color:var(--rose);}
 .proj-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--rose);margin-bottom:1rem;}
 .proj-story{font-size:0.95rem;line-height:1.85;color:var(--muted);font-weight:300;max-height:0;overflow:hidden;opacity:0;transition:max-height 0.5s ease,opacity 0.4s ease,margin 0.4s ease;}
-.proj.open .proj-story{max-height:320px;opacity:1;margin-top:0.5rem;}
+.proj.open .proj-story{max-height:460px;opacity:1;margin-top:0.5rem;}
 .proj-story b{color:var(--cream);font-weight:500;}
+.ps{display:block;}
+.ps + .ps{margin-top:0.7rem;}
 .proj-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-top:1.25rem;max-height:0;overflow:hidden;opacity:0;transition:max-height 0.5s ease,opacity 0.4s ease;}
 .proj.open .proj-foot{max-height:80px;opacity:1;}
 .proj-tags{display:flex;gap:0.5rem;flex-wrap:wrap;}
@@ -223,7 +225,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
     <div class="proj-main">
       <div class="proj-label">Machine Learning · UN World Food Programme</div>
       <div class="proj-headline">Predicting where hunger strikes, before it does</div>
-      <div class="proj-story"><b>The problem:</b> food aid is finite, and getting it to the wrong place costs lives. <b>My move:</b> as my Berkeley capstone, I worked with WFP's VAM unit, the analytical team that decides where aid flows, to build models that flag at-risk populations early. <b>The result:</b> a predictive tool that turns scattered signals into a clear map of need.</div>
+      <div class="proj-story"><span class="ps"><b>The problem:</b> food aid is finite, and getting it to the wrong place costs lives.</span><span class="ps"><b>My move:</b> as my Berkeley capstone, I worked with WFP's VAM unit, the analytical team that decides where aid flows, to build models that flag at-risk populations early.</span><span class="ps"><b>The result:</b> a predictive tool that turns scattered signals into a clear map of need.</span></div>
       <div class="proj-foot">
         <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">SQL</span><span class="proj-tag">GIS</span></div>
         <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
@@ -237,7 +239,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
     <div class="proj-main">
       <div class="proj-label">NLP · Production System</div>
       <div class="proj-headline">An ML API that survived 102 requests a second</div>
-      <div class="proj-story"><b>The problem:</b> most student ML projects die in a notebook and never face the real world. <b>My move:</b> I built a sentiment analysis API and actually shipped it, on AWS EKS, with Redis caching and Kubernetes autoscaling. <b>The result:</b> 102 requests per second at 99.96% uptime. A system that lived in production, not a demo.</div>
+      <div class="proj-story"><span class="ps"><b>The problem:</b> most student ML projects die in a notebook and never face the real world.</span><span class="ps"><b>My move:</b> I built a sentiment analysis API and actually shipped it, on AWS EKS, with Redis caching and Kubernetes autoscaling.</span><span class="ps"><b>The result:</b> 102 requests per second at 99.96% uptime. A system that lived in production, not a demo.</span></div>
       <div class="proj-foot">
         <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">AWS EKS</span><span class="proj-tag">Docker</span><span class="proj-tag">Kubernetes</span></div>
         <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
@@ -251,7 +253,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
     <div class="proj-main">
       <div class="proj-label">Machine Learning · Data Engineering</div>
       <div class="proj-headline">Wrangling 41.5 million flight records into a forecast</div>
-      <div class="proj-story"><b>The problem:</b> predicting flight delays means reckoning with data far too big for one machine. <b>My move:</b> an end-to-end pipeline on Databricks across 384 Spark cores, distributed computing at genuine scale. <b>The result:</b> ensemble models that predict delays from weather and network effects, built on production-grade infrastructure.</div>
+      <div class="proj-story"><span class="ps"><b>The problem:</b> predicting flight delays means reckoning with data far too big for one machine.</span><span class="ps"><b>My move:</b> an end-to-end pipeline on Databricks across 384 Spark cores, distributed computing at genuine scale.</span><span class="ps"><b>The result:</b> ensemble models that predict delays from weather and network effects, built on production-grade infrastructure.</span></div>
       <div class="proj-foot">
         <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Databricks</span><span class="proj-tag">Spark</span><span class="proj-tag">Ensemble ML</span></div>
         <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
@@ -265,7 +267,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
     <div class="proj-main">
       <div class="proj-label">Analytics</div>
       <div class="proj-headline">Mapping why subscribers stay, and why they leave</div>
-      <div class="proj-story"><b>The problem:</b> a streaming catalogue is only as strong as its gaps. <b>My move:</b> a deep-dive into 992 Disney+ titles, examining content composition, regional gaps, and the levers behind retention. <b>The result:</b> a clear read on where the library wins and where it quietly loses people.</div>
+      <div class="proj-story"><span class="ps"><b>The problem:</b> a streaming catalogue is only as strong as its gaps.</span><span class="ps"><b>My move:</b> a deep-dive into 992 Disney+ titles, examining content composition, regional gaps, and the levers behind retention.</span><span class="ps"><b>The result:</b> a clear read on where the library wins and where it quietly loses people.</span></div>
       <div class="proj-foot">
         <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Pandas</span><span class="proj-tag">Matplotlib</span><span class="proj-tag">EDA</span></div>
         <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
@@ -279,7 +281,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
     <div class="proj-main">
       <div class="proj-label">Statistical Modelling</div>
       <div class="proj-headline">Explaining 90% of California's food-aid gaps</div>
-      <div class="proj-story"><b>The problem:</b> millions who qualify for food assistance never receive it, and no one could say exactly why. <b>My move:</b> econometric modelling that isolates the structural predictors of CalFresh reach. <b>The result:</b> a model with an R² of 0.90, turned into recommendations a policymaker can act on.</div>
+      <div class="proj-story"><span class="ps"><b>The problem:</b> millions who qualify for food assistance never receive it, and no one could say exactly why.</span><span class="ps"><b>My move:</b> econometric modelling that isolates the structural predictors of CalFresh reach.</span><span class="ps"><b>The result:</b> a model with an R² of 0.90, turned into recommendations a policymaker can act on.</span></div>
       <div class="proj-foot">
         <div class="proj-tags"><span class="proj-tag">R</span><span class="proj-tag">Regression</span><span class="proj-tag">Econometrics</span></div>
         <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
@@ -293,7 +295,7 @@ footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.
     <div class="proj-main">
       <div class="proj-label">Analytics · Visualisation</div>
       <div class="proj-headline">Turning 50,000 voices into a mental health story</div>
-      <div class="proj-story"><b>The problem:</b> survey data on mental health is vast, messy, and easy to ignore. <b>My move:</b> I analysed 50,000+ respondents across countries and built interactive dashboards that let the patterns speak. <b>The result:</b> complex data made legible enough to change a conversation.</div>
+      <div class="proj-story"><span class="ps"><b>The problem:</b> survey data on mental health is vast, messy, and easy to ignore.</span><span class="ps"><b>My move:</b> I analysed 50,000+ respondents across countries and built interactive dashboards that let the patterns speak.</span><span class="ps"><b>The result:</b> complex data made legible enough to change a conversation.</span></div>
       <div class="proj-foot">
         <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Tableau</span><span class="proj-tag">Altair</span><span class="proj-tag">EDA</span></div>
         <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
