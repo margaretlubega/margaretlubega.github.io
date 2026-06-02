@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Margaret Namazzi Lubega</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1A0B11;--bg2:#23121A;--surface:#2A1620;
+  --cream:#F4EAE2;--muted:#B49A98;--dim:#7C6469;
+  --rose:#E68CA4;--rose-deep:#D45F7F;--gold:#D4A93E;
+  --line:rgba(244,234,226,0.1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+::selection{background:var(--rose);color:var(--bg);}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 5vw;mix-blend-mode:difference;}
+.logo{font-family:'Fraunces',serif;font-weight:500;font-size:1.15rem;letter-spacing:0.02em;color:#fff;text-decoration:none;}
+.nav-links{display:flex;gap:2.5rem;list-style:none;align-items:center;}
+.nav-links a{color:#fff;text-decoration:none;font-size:0.78rem;font-weight:400;letter-spacing:0.06em;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:#fff;transition:width 0.3s;}
+.nav-links a:hover::after{width:100%;}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:8rem 5vw 4rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-15%;right:-8%;width:48%;height:65%;background:radial-gradient(circle,rgba(230,140,164,0.16),transparent 68%);filter:blur(50px);pointer-events:none;z-index:0;animation:float1 11s ease-in-out infinite;}
+.hero::after{content:'';position:absolute;bottom:-18%;right:6%;width:40%;height:58%;background:radial-gradient(circle,rgba(212,169,62,0.1),transparent 70%);filter:blur(60px);pointer-events:none;z-index:0;animation:float2 13s ease-in-out infinite;}
+@keyframes float1{0%,100%{transform:translate(0,0);}50%{transform:translate(-3%,4%);}}
+@keyframes float2{0%,100%{transform:translate(0,0);}50%{transform:translate(4%,-3%);}}
+.sparkles{position:absolute;inset:0;z-index:0;pointer-events:none;}
+.spark{position:absolute;color:var(--rose);opacity:0.2;animation:twinkle 5s ease-in-out infinite;}
+.spark.gold{color:var(--gold);}
+@keyframes twinkle{0%,100%{opacity:0.12;transform:scale(0.7);}50%{opacity:0.85;transform:scale(1.15);}}
+.hero-content{position:relative;z-index:1;}
+.hero-marker{font-size:0.72rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--rose);margin-bottom:2.5rem;display:flex;align-items:center;gap:1rem;}
+.hero-marker::before{content:'';width:3rem;height:1px;background:var(--rose);}
+.hero h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.4rem,6vw,5.5rem);line-height:1.05;letter-spacing:-0.02em;max-width:16ch;margin-bottom:2.5rem;}
+.hero h1 b{font-weight:600;font-style:italic;color:var(--rose);}
+.hero h1 .gold{color:var(--gold);font-weight:500;}
+.hero-meta{display:flex;gap:3rem;flex-wrap:wrap;align-items:flex-end;margin-top:1rem;}
+.hero-name{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:500;}
+.hero-name .buzz{display:block;font-family:'Space Grotesk',sans-serif;font-size:0.78rem;font-weight:400;color:var(--muted);letter-spacing:0.08em;margin-top:0.5rem;text-transform:uppercase;}
+.hero-cta{display:flex;gap:1rem;}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 1.8rem;border-radius:100px;text-decoration:none;font-size:0.82rem;font-weight:500;letter-spacing:0.03em;transition:all 0.25s;}
+.btn-fill{background:var(--rose);color:var(--bg);}
+.btn-fill:hover{background:var(--rose-deep);transform:translateY(-2px);}
+.btn-ghost{border:1px solid var(--line);color:var(--cream);}
+.btn-ghost:hover{border-color:var(--rose);color:var(--rose);}
+.scroll-hint{position:absolute;bottom:2.5rem;right:5vw;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);writing-mode:vertical-rl;z-index:1;}
+
+.strip{background:var(--rose);color:var(--bg);padding:2.5rem 5vw;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;position:relative;z-index:1;}
+.strip-item .n{font-family:'Fraunces',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:600;line-height:1;}
+.strip-item .l{font-size:0.78rem;font-weight:500;margin-top:0.5rem;opacity:0.75;letter-spacing:0.02em;}
+
+section{padding:7rem 5vw;}
+.sec-title{font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;letter-spacing:-0.01em;margin-bottom:4rem;}
+.sec-title em{font-style:italic;color:var(--rose);}
+
+/* WORK */
+#work{background:var(--bg);}
+.proj{border-top:1px solid var(--line);padding:2.75rem 0;display:grid;grid-template-columns:auto 1fr auto;gap:2.5rem;align-items:start;cursor:pointer;transition:padding 0.3s;}
+.proj:last-child{border-bottom:1px solid var(--line);}
+.proj:hover{padding-left:1.5rem;}
+.proj-num{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--dim);font-weight:400;padding-top:0.5rem;transition:color 0.3s;}
+.proj:hover .proj-num{color:var(--gold);}
+.proj-main{max-width:62ch;}
+.proj-headline{font-family:'Fraunces',serif;font-size:clamp(1.4rem,2.6vw,2.1rem);font-weight:400;line-height:1.15;margin-bottom:0.6rem;letter-spacing:-0.01em;transition:color 0.3s;}
+.proj:hover .proj-headline{color:var(--rose);}
+.proj-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--rose);margin-bottom:1rem;}
+.proj-story{font-size:0.95rem;line-height:1.85;color:var(--muted);font-weight:300;max-height:0;overflow:hidden;opacity:0;transition:max-height 0.5s ease,opacity 0.4s ease,margin 0.4s ease;}
+.proj.open .proj-story{max-height:320px;opacity:1;margin-top:0.5rem;}
+.proj-story b{color:var(--cream);font-weight:500;}
+.proj-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-top:1.25rem;max-height:0;overflow:hidden;opacity:0;transition:max-height 0.5s ease,opacity 0.4s ease;}
+.proj.open .proj-foot{max-height:80px;opacity:1;}
+.proj-tags{display:flex;gap:0.5rem;flex-wrap:wrap;}
+.proj-tag{font-size:0.7rem;padding:0.25rem 0.75rem;border:1px solid var(--line);border-radius:100px;color:var(--muted);}
+.proj-gh{font-size:0.78rem;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;white-space:nowrap;transition:gap 0.2s;border:1px solid rgba(212,169,62,0.35);padding:0.35rem 0.9rem;border-radius:100px;}
+.proj-gh:hover{gap:0.7rem;background:rgba(212,169,62,0.08);}
+.proj-toggle{font-size:1.5rem;color:var(--dim);font-weight:300;padding-top:0.3rem;transition:transform 0.3s,color 0.3s;}
+.proj.open .proj-toggle{transform:rotate(45deg);color:var(--rose);}
+.proj:hover .proj-toggle{color:var(--rose);}
+
+/* ABOUT */
+#about{background:var(--bg2);}
+.about-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start;}
+.about-photo{position:relative;}
+.about-photo img{width:100%;display:block;border-radius:4px;}
+.about-ph{width:100%;aspect-ratio:4/5;background:var(--surface);border:1px solid var(--line);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--dim);}
+.about-ph span{font-size:0.75rem;letter-spacing:0.05em;}
+.about-frame{position:absolute;top:1.25rem;left:1.25rem;width:100%;height:100%;border:1px solid var(--rose);border-radius:4px;z-index:-1;opacity:0.35;}
+.about-body p{font-family:'Fraunces',serif;font-size:clamp(1.1rem,1.6vw,1.35rem);font-weight:300;line-height:1.6;color:var(--cream);margin-bottom:1.5rem;}
+.about-body p.small{font-family:'Space Grotesk',sans-serif;font-size:0.95rem;line-height:1.85;color:var(--muted);font-weight:300;}
+.about-body b{color:var(--rose);font-weight:500;font-style:italic;}
+.about-tags{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line);}
+.about-tag{font-size:0.75rem;color:var(--muted);padding:0.4rem 1rem;border:1px solid var(--line);border-radius:100px;}
+.about-tag b{color:var(--gold);font-style:normal;font-weight:500;}
+
+/* JOURNEY */
+#journey{background:var(--bg);}
+.toggle{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:4px;margin-bottom:3.5rem;}
+.toggle button{font-family:'Space Grotesk',sans-serif;font-size:0.8rem;font-weight:500;letter-spacing:0.04em;color:var(--muted);background:transparent;border:none;padding:0.6rem 1.6rem;border-radius:100px;cursor:pointer;transition:all 0.3s;}
+.toggle button.on{background:var(--rose);color:var(--bg);}
+.timeline{position:relative;padding-left:2.5rem;}
+.timeline::before{content:'';position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:linear-gradient(to bottom,var(--rose),rgba(230,140,164,0.2));}
+.timeline.edu::before{background:linear-gradient(to bottom,var(--gold),rgba(212,169,62,0.2));}
+.tl-item{position:relative;padding-bottom:3rem;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{content:'';position:absolute;left:-2.5rem;top:0.4rem;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--rose);}
+.timeline.edu .tl-item::before{border-color:var(--gold);}
+.tl-year{font-family:'Fraunces',serif;font-size:0.85rem;color:var(--gold);letter-spacing:0.04em;margin-bottom:0.4rem;}
+.tl-role{font-family:'Fraunces',serif;font-size:clamp(1.2rem,2vw,1.6rem);font-weight:500;line-height:1.2;margin-bottom:0.2rem;}
+.tl-place{font-size:0.85rem;color:var(--rose);margin-bottom:0.7rem;letter-spacing:0.03em;}
+.tl-desc{font-size:0.92rem;line-height:1.75;color:var(--muted);font-weight:300;max-width:60ch;}
+.tl-view{display:none;}
+.tl-view.show{display:block;animation:fade 0.4s ease;}
+@keyframes fade{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+/* STACK */
+#stack{background:var(--bg2);}
+.mwrap{overflow:hidden;position:relative;margin-bottom:1.5rem;}
+.mwrap::before,.mwrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;}
+.mwrap::before{left:0;background:linear-gradient(to right,var(--bg2),transparent);}
+.mwrap::after{right:0;background:linear-gradient(to left,var(--bg2),transparent);}
+.mtrack{display:flex;gap:3.5rem;width:max-content;animation:scroll 34s linear infinite;align-items:center;}
+.mtrack.rev{animation-direction:reverse;animation-duration:30s;}
+@keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.skill{font-family:'Fraunces',serif;font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;color:var(--dim);white-space:nowrap;transition:color 0.3s;font-style:italic;}
+.skill:hover{color:var(--rose);}
+.skill-dot{color:var(--gold);font-size:1rem;}
+
+/* CONTACT */
+#contact{background:var(--rose);color:var(--bg);text-align:center;padding:8rem 5vw;}
+.contact-big{font-family:'Fraunces',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:300;line-height:1.05;letter-spacing:-0.02em;margin-bottom:1.5rem;}
+.contact-big em{font-style:italic;font-weight:500;}
+.contact-sub{font-size:1rem;max-width:440px;margin:0 auto 3rem;line-height:1.7;opacity:0.7;font-weight:400;}
+.contact-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.clink{display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 2rem;border-radius:100px;text-decoration:none;font-size:0.85rem;font-weight:500;letter-spacing:0.03em;transition:all 0.25s;}
+.clink.dark{background:var(--bg);color:var(--cream);}
+.clink.dark:hover{background:var(--bg2);transform:translateY(-2px);}
+.clink.out{border:1.5px solid rgba(26,11,17,0.3);color:var(--bg);}
+.clink.out:hover{border-color:var(--bg);background:rgba(26,11,17,0.06);}
+footer{background:var(--rose);color:var(--bg);text-align:center;padding:0 5vw 2.5rem;font-size:0.75rem;opacity:0.55;}
+
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 0.8s ease,transform 0.8s ease;}
+.reveal.show{opacity:1;transform:translateY(0);}
+
+@media(max-width:900px){
+  section{padding:4.5rem 5vw;}
+  .nav-links{display:none;}
+  .strip{grid-template-columns:1fr 1fr;gap:1.75rem;}
+  .hero-meta{flex-direction:column;align-items:flex-start;gap:2rem;}
+  .scroll-hint{display:none;}
+  .proj{gap:1.25rem;}
+  .about-wrap{grid-template-columns:1fr;gap:2.5rem;}
+  .about-photo{max-width:300px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">Margaret Namazzi Lubega</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="sparkles" aria-hidden="true">
+    <span class="spark" style="top:14%;left:58%;font-size:13px;animation-duration:4s;">✦</span>
+    <span class="spark" style="top:22%;left:78%;font-size:9px;animation-duration:5.5s;animation-delay:.6s;">✧</span>
+    <span class="spark gold" style="top:9%;left:88%;font-size:11px;animation-duration:4.8s;animation-delay:1.1s;">✦</span>
+    <span class="spark" style="top:38%;left:69%;font-size:8px;animation-duration:6s;animation-delay:.3s;">✧</span>
+    <span class="spark gold" style="top:30%;left:92%;font-size:10px;animation-duration:5s;animation-delay:1.7s;">✦</span>
+    <span class="spark" style="top:52%;left:82%;font-size:12px;animation-duration:4.4s;animation-delay:.9s;">✦</span>
+    <span class="spark" style="top:66%;left:62%;font-size:8px;animation-duration:5.8s;animation-delay:2s;">✧</span>
+    <span class="spark gold" style="top:74%;left:86%;font-size:11px;animation-duration:5.2s;animation-delay:.5s;">✦</span>
+    <span class="spark" style="top:84%;left:73%;font-size:9px;animation-duration:6.2s;animation-delay:1.3s;">✧</span>
+    <span class="spark" style="top:18%;left:48%;font-size:7px;animation-duration:5s;animation-delay:2.4s;">✧</span>
+    <span class="spark gold" style="top:60%;left:95%;font-size:9px;animation-duration:4.6s;animation-delay:1.9s;">✦</span>
+    <span class="spark" style="top:88%;left:90%;font-size:10px;animation-duration:5.4s;animation-delay:.7s;">✦</span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-marker">Data Scientist · Open to Global Opportunities</div>
+    <h1>Good data work changes a decision, not just a <b>dashboard</b>. I build models for the <span class="gold">people behind the data</span>, the ones a result actually reaches.</h1>
+    <div class="hero-meta">
+      <div class="hero-name">Margaret Namazzi Lubega<span class="buzz">Machine Learning · MLOps · NLP · Predictive Modelling · Big Data</span></div>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-fill">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="strip">
+  <div class="strip-item"><div class="n">$500K</div><div class="l">Saved annually, cost-optimisation</div></div>
+  <div class="strip-item"><div class="n">83%</div><div class="l">Faster bank processing, automated</div></div>
+  <div class="strip-item"><div class="n">UN WFP</div><div class="l">Modelled where hunger strikes</div></div>
+  <div class="strip-item"><div class="n">102/s</div><div class="l">Throughput on a live ML API</div></div>
+</div>
+
+<!-- WORK -->
+<section id="work">
+  <h2 class="sec-title reveal">Six projects, and the <em>thinking</em> behind them</h2>
+
+  <div class="proj reveal" data-open>
+    <div class="proj-num">01</div>
+    <div class="proj-main">
+      <div class="proj-label">Machine Learning · UN World Food Programme</div>
+      <div class="proj-headline">Predicting where hunger strikes, before it does</div>
+      <div class="proj-story"><b>The problem:</b> food aid is finite, and getting it to the wrong place costs lives. <b>My move:</b> as my Berkeley capstone, I worked with WFP's VAM unit, the analytical team that decides where aid flows, to build models that flag at-risk populations early. <b>The result:</b> a predictive tool that turns scattered signals into a clear map of need.</div>
+      <div class="proj-foot">
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">SQL</span><span class="proj-tag">GIS</span></div>
+        <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="proj-toggle">+</div>
+  </div>
+
+  <div class="proj reveal">
+    <div class="proj-num">02</div>
+    <div class="proj-main">
+      <div class="proj-label">NLP · Production System</div>
+      <div class="proj-headline">An ML API that survived 102 requests a second</div>
+      <div class="proj-story"><b>The problem:</b> most student ML projects die in a notebook and never face the real world. <b>My move:</b> I built a sentiment analysis API and actually shipped it, on AWS EKS, with Redis caching and Kubernetes autoscaling. <b>The result:</b> 102 requests per second at 99.96% uptime. A system that lived in production, not a demo.</div>
+      <div class="proj-foot">
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">AWS EKS</span><span class="proj-tag">Docker</span><span class="proj-tag">Kubernetes</span></div>
+        <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="proj-toggle">+</div>
+  </div>
+
+  <div class="proj reveal">
+    <div class="proj-num">03</div>
+    <div class="proj-main">
+      <div class="proj-label">Machine Learning · Data Engineering</div>
+      <div class="proj-headline">Wrangling 41.5 million flight records into a forecast</div>
+      <div class="proj-story"><b>The problem:</b> predicting flight delays means reckoning with data far too big for one machine. <b>My move:</b> an end-to-end pipeline on Databricks across 384 Spark cores, distributed computing at genuine scale. <b>The result:</b> ensemble models that predict delays from weather and network effects, built on production-grade infrastructure.</div>
+      <div class="proj-foot">
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Databricks</span><span class="proj-tag">Spark</span><span class="proj-tag">Ensemble ML</span></div>
+        <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="proj-toggle">+</div>
+  </div>
+
+  <div class="proj reveal">
+    <div class="proj-num">04</div>
+    <div class="proj-main">
+      <div class="proj-label">Analytics</div>
+      <div class="proj-headline">Mapping why subscribers stay, and why they leave</div>
+      <div class="proj-story"><b>The problem:</b> a streaming catalogue is only as strong as its gaps. <b>My move:</b> a deep-dive into 992 Disney+ titles, examining content composition, regional gaps, and the levers behind retention. <b>The result:</b> a clear read on where the library wins and where it quietly loses people.</div>
+      <div class="proj-foot">
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Pandas</span><span class="proj-tag">Matplotlib</span><span class="proj-tag">EDA</span></div>
+        <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="proj-toggle">+</div>
+  </div>
+
+  <div class="proj reveal">
+    <div class="proj-num">05</div>
+    <div class="proj-main">
+      <div class="proj-label">Statistical Modelling</div>
+      <div class="proj-headline">Explaining 90% of California's food-aid gaps</div>
+      <div class="proj-story"><b>The problem:</b> millions who qualify for food assistance never receive it, and no one could say exactly why. <b>My move:</b> econometric modelling that isolates the structural predictors of CalFresh reach. <b>The result:</b> a model with an R² of 0.90, turned into recommendations a policymaker can act on.</div>
+      <div class="proj-foot">
+        <div class="proj-tags"><span class="proj-tag">R</span><span class="proj-tag">Regression</span><span class="proj-tag">Econometrics</span></div>
+        <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="proj-toggle">+</div>
+  </div>
+
+  <div class="proj reveal">
+    <div class="proj-num">06</div>
+    <div class="proj-main">
+      <div class="proj-label">Analytics · Visualisation</div>
+      <div class="proj-headline">Turning 50,000 voices into a mental health story</div>
+      <div class="proj-story"><b>The problem:</b> survey data on mental health is vast, messy, and easy to ignore. <b>My move:</b> I analysed 50,000+ respondents across countries and built interactive dashboards that let the patterns speak. <b>The result:</b> complex data made legible enough to change a conversation.</div>
+      <div class="proj-foot">
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Tableau</span><span class="proj-tag">Altair</span><span class="proj-tag">EDA</span></div>
+        <a href="https://github.com/margaretlubega" target="_blank" rel="noopener" class="proj-gh">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="proj-toggle">+</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="sec-title reveal">The person behind the <em>proof</em></h2>
+  <div class="about-wrap">
+    <div class="about-photo reveal">
+      <img src="headshot.jpg" alt="Margaret Namazzi Lubega"
+        onerror="this.style.display='none';document.getElementById('aph').style.display='flex';">
+      <div class="about-ph" id="aph" style="display:none;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo coming soon</span>
+      </div>
+      <div class="about-frame"></div>
+    </div>
+    <div class="about-body reveal">
+      <p>I grew up in Uganda and built my career on a simple belief: <b>a model is only worth the decision it improves.</b></p>
+      <p class="small">For six years at Stanbic Bank Uganda, one of East Africa's largest banks, I lived that belief, cutting processing time by 83% through automation, reducing customer queries by 25%, and lifting qualified leads by 20%. Then I took it to UC Berkeley, earning a Master's in Information and Data Science with a 4.0 GPA, where my capstone modelled food insecurity for the UN World Food Programme.</p>
+      <p class="small">I care less about the cleverest algorithm and more about the "so what." I ship things that run in production, I translate findings for the people making the call, and I do not hand over a notebook and call it done.</p>
+      <p class="small">I also mentor women breaking into STEM through the SheGeek programme and stay active in the Women in Data Science community. The pipeline only widens if someone holds the door, so I try to hold it.</p>
+      <p class="small">Away from the screen, I paint and play the piano. Both are the same skill, really: knowing when something is finished, and having the patience to get it there.</p>
+      <div class="about-tags">
+        <span class="about-tag"><b>MSc</b> &nbsp;UC Berkeley · 4.0</span>
+        <span class="about-tag"><b>BS</b> &nbsp;Business Analytics · Cum Laude</span>
+        <span class="about-tag"><b>Citizen</b> &nbsp;Ugandan and British</span>
+        <span class="about-tag"><b>Mentor</b> &nbsp;Women in STEM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <h2 class="sec-title reveal">Where I've <em>been</em></h2>
+  <div class="toggle reveal">
+    <button id="btn-exp" class="on" onclick="switchView('exp')">Experience</button>
+    <button id="btn-edu" onclick="switchView('edu')">Education</button>
+  </div>
+
+  <div class="tl-view show" id="view-exp">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2021 — 2024</div>
+        <div class="tl-role">Data Scientist / Business Manager</div>
+        <div class="tl-place">Stanbic Bank Uganda · Standard Bank Group</div>
+        <div class="tl-desc">Owned reporting and predictive modelling for executive leadership. Cut processing time by 83% through automation, reduced customer queries by 25%, and built ML-driven campaigns that lifted qualified leads by 20%.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2020 — 2021</div>
+        <div class="tl-role">Data Analyst</div>
+        <div class="tl-place">Stanbic Bank Uganda · Standard Bank Group</div>
+        <div class="tl-desc">Built financial models and cost-optimisation analyses, generating $500K in annual savings and laying the groundwork for the bank's data-driven decision-making.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018 — 2019</div>
+        <div class="tl-role">Management Information Systems Officer</div>
+        <div class="tl-place">Stanbic Bank Uganda · Standard Bank Group</div>
+        <div class="tl-desc">Delivered the reporting and data infrastructure that leadership relied on, the early foundation for everything I built later in data science.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tl-view" id="view-edu">
+    <div class="timeline edu">
+      <div class="tl-item">
+        <div class="tl-year">2024 — 2026</div>
+        <div class="tl-role">MSc, Information &amp; Data Science</div>
+        <div class="tl-place">University of California, Berkeley · 4.0 GPA</div>
+        <div class="tl-desc">Berkeley's No. 1-ranked data science master's, spanning machine learning and deep learning, natural language processing, large-scale data engineering, and the ethics of responsible AI. My capstone partnered with the UN World Food Programme to model food insecurity, putting the full toolkit to work on a problem where the answer genuinely matters.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2025 — 2026</div>
+        <div class="tl-role">Graduate Certificate, Project Management</div>
+        <div class="tl-place">UCLA Extension · Agile Concentration · 4.0 GPA</div>
+        <div class="tl-desc">Formal training in Agile and Scrum delivery, stakeholder management, and shipping technical work on time and on scope.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2017</div>
+        <div class="tl-role">BS, Business Analytics &amp; Information Systems</div>
+        <div class="tl-place">University of South Florida · Cum Laude</div>
+        <div class="tl-desc">Where the data story began, graduating with honours and a foundation in turning information systems into business decisions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack">
+  <h2 class="sec-title reveal">What I build with</h2>
+  <div class="mwrap reveal">
+    <div class="mtrack">
+      <span class="skill">Python</span><span class="skill-dot">✦</span>
+      <span class="skill">R</span><span class="skill-dot">✦</span>
+      <span class="skill">SQL</span><span class="skill-dot">✦</span>
+      <span class="skill">Spark</span><span class="skill-dot">✦</span>
+      <span class="skill">AWS</span><span class="skill-dot">✦</span>
+      <span class="skill">Databricks</span><span class="skill-dot">✦</span>
+      <span class="skill">Docker</span><span class="skill-dot">✦</span>
+      <span class="skill">Kubernetes</span><span class="skill-dot">✦</span>
+      <span class="skill">Python</span><span class="skill-dot">✦</span>
+      <span class="skill">R</span><span class="skill-dot">✦</span>
+      <span class="skill">SQL</span><span class="skill-dot">✦</span>
+      <span class="skill">Spark</span><span class="skill-dot">✦</span>
+      <span class="skill">AWS</span><span class="skill-dot">✦</span>
+      <span class="skill">Databricks</span><span class="skill-dot">✦</span>
+      <span class="skill">Docker</span><span class="skill-dot">✦</span>
+      <span class="skill">Kubernetes</span><span class="skill-dot">✦</span>
+    </div>
+  </div>
+  <div class="mwrap reveal">
+    <div class="mtrack rev">
+      <span class="skill">TensorFlow</span><span class="skill-dot">✦</span>
+      <span class="skill">PyTorch</span><span class="skill-dot">✦</span>
+      <span class="skill">Scikit-learn</span><span class="skill-dot">✦</span>
+      <span class="skill">Pandas</span><span class="skill-dot">✦</span>
+      <span class="skill">Power BI</span><span class="skill-dot">✦</span>
+      <span class="skill">Tableau</span><span class="skill-dot">✦</span>
+      <span class="skill">A/B Testing</span><span class="skill-dot">✦</span>
+      <span class="skill">NLP</span><span class="skill-dot">✦</span>
+      <span class="skill">TensorFlow</span><span class="skill-dot">✦</span>
+      <span class="skill">PyTorch</span><span class="skill-dot">✦</span>
+      <span class="skill">Scikit-learn</span><span class="skill-dot">✦</span>
+      <span class="skill">Pandas</span><span class="skill-dot">✦</span>
+      <span class="skill">Power BI</span><span class="skill-dot">✦</span>
+      <span class="skill">Tableau</span><span class="skill-dot">✦</span>
+      <span class="skill">A/B Testing</span><span class="skill-dot">✦</span>
+      <span class="skill">NLP</span><span class="skill-dot">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="contact-big">Let's solve<br>something <em>hard</em>.</h2>
+  <p class="contact-sub">Open to global opportunities in data science and analytics. British citizen, available immediately.</p>
+  <div class="contact-links">
+    <a href="mailto:margaret@margaretlubega.com" class="clink dark">Email Me</a>
+    <a href="https://linkedin.com/in/margaretlubega" target="_blank" rel="noopener" class="clink out">LinkedIn</a>
+    <a href="resume.pdf" class="clink out" download>Download CV</a>
+  </div>
+</section>
+<footer>© 2026 Margaret Namazzi Lubega</footer>
+
+<script>
+function switchView(v){
+  document.getElementById('view-exp').classList.toggle('show',v==='exp');
+  document.getElementById('view-edu').classList.toggle('show',v==='edu');
+  document.getElementById('btn-exp').classList.toggle('on',v==='exp');
+  document.getElementById('btn-edu').classList.toggle('on',v==='edu');
+}
+document.querySelectorAll('.proj').forEach(p=>{p.addEventListener('click',e=>{if(e.target.closest('.proj-gh'))return;p.classList.toggle('open');});});
+document.querySelector('.proj[data-open]')?.classList.add('open');
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show');});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
