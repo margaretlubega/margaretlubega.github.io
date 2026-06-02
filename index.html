@@ -64,12 +64,12 @@ section{padding:7rem 5vw;}
 
 /* WORK */
 #work{background:var(--bg);}
-.proj{border-top:1px solid var(--line);padding:2.75rem 0;display:grid;grid-template-columns:auto 1fr auto;gap:2.5rem;align-items:start;cursor:pointer;transition:padding 0.3s;}
+.proj{border-top:1px solid var(--line);padding:2.5rem 0;display:grid;grid-template-columns:auto minmax(0,68ch) auto;column-gap:2rem;justify-content:start;align-items:start;cursor:pointer;transition:padding 0.3s;}
 .proj:last-child{border-bottom:1px solid var(--line);}
 .proj:hover{padding-left:1.5rem;}
 .proj-num{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--dim);font-weight:400;padding-top:0.5rem;transition:color 0.3s;}
 .proj:hover .proj-num{color:var(--gold);}
-.proj-main{max-width:62ch;}
+.proj-main{width:100%;}
 .proj-headline{font-family:'Fraunces',serif;font-size:clamp(1.4rem,2.6vw,2.1rem);font-weight:400;line-height:1.15;margin-bottom:0.6rem;letter-spacing:-0.01em;transition:color 0.3s;}
 .proj:hover .proj-headline{color:var(--rose);}
 .proj-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--rose);margin-bottom:1rem;}
